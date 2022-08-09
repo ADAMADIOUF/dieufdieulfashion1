@@ -27,7 +27,8 @@ imgDiv.current.style.backgroundPosition=
         const { images, name, price, content } = product;
         return (
           <>
-            <article className='single-details'>
+          
+             <article className='single-details'>
               <div
                 className='big-img' onMouseMove={handleMouse}
                 style={{ backgroundImage: `url(${images[index]})` }}
@@ -59,7 +60,7 @@ imgDiv.current.style.backgroundPosition=
                   ></button>
                 );
               })}
-            </article>
+            </article> 
           </>
         );
       })}
