@@ -76,9 +76,8 @@ const AppProvider =({children}) =>{
      id: '1',
      name: 'boubou tradionnel',
      images: [
-       'https://dl.airtable.com/.attachmentThumbnails/145f3eaf0a3e3d3b87497dad021a7840/0099e30d',
-       'https://dl.airtable.com/.attachmentThumbnails/3d276189f4a40d269e61550745586419/dd3cf01e',
-     ],
+      'images/boutique1 1.png',
+      'images/boutique2 1.png'],
      description:
        'How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.',
      content:
@@ -90,10 +89,7 @@ const AppProvider =({children}) =>{
    {
      id: '2',
      name: 'boubou tradionnel',
-     images: [
-       'https://dl.airtable.com/.attachmentThumbnails/bafb3d4d6ddf92688385a9148ba55ac2/b20e0072',
-       'https://dl.airtable.com/.attachmentThumbnails/480a86a401bac8f7d4f68d985286bbd9/18268dcb',
-     ],
+     images: ['images/boutique3 1.png', 'images/boutique4 1.png'],
      description:
        'How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.',
      content:
@@ -106,9 +102,9 @@ const AppProvider =({children}) =>{
      id: '3',
      name: 'boubou tradionnel',
      images: [
-       'https://dl.airtable.com/.attachmentThumbnails/c62248404535eac1e026708e0f9fb0a2/b03117de',
-       'https://dl.airtable.com/.attachmentThumbnails/1517de99396ac5e1a772275976ce9fb6/15675d2b',
-       'https://dl.airtable.com/.attachmentThumbnails/9c603644afb15254889ae550140c2ad5/2a49f58c',
+       'images/boutique5 1.png',
+       'images/boutique6 1.png',
+       'images/boutique7 1.png',
      ],
      description:
        'How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.',

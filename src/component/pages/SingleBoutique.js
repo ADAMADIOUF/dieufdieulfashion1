@@ -8,6 +8,7 @@ export default function SingleBoutique() {
    const products = boutique.filter((product,index)=>{
     return product.id === id
    })
+   console.log(products);
 
    const handleMouse = (e) =>{
 const {left,top,width,height}= e.target.getBoundingClientRect()
