@@ -676,7 +676,7 @@ transition: var(--transition);
 .big-img{
   height: 750px;
   width: 100%;
-  max-width: 900px;
+  max-width: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -688,16 +688,18 @@ transition: var(--transition);
   cursor: zoom-in;
 }
 .small-img img{
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   overflow: hidden;
+  
 }
 .small-img{
   border-radius: var(--radius);
   transition: var(--transition);
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 2rem;
+  
+  gap: 1rem;
   margin-top: 2rem;
 }
 .colors{
