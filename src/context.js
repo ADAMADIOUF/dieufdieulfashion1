@@ -5,7 +5,7 @@ const AppProvider =({children}) =>{
  const[showNav,setShowNav]= useState(false)
  const[indexSlide,setIndexSlide]= useState(0)
   const [index, setIndex] = useState(0);
-
+const[indexTestimonial,setIndexTestimonial]= useState(0)
  
  const openNav = () =>{
   setShowNav(true)
@@ -17,58 +17,58 @@ const AppProvider =({children}) =>{
    {
      id: 1,
      image: './images/banner-1.png',
-     name: 'test 1',
+     name: 'boubou africain,couple',
      title:
-       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quo impedit molestiae et totam.',
+       "le boubou est une chemise africaine composèe d'un grand rectangle de tissu avec une ouverte au centre pour le cou.",
    },
    {
      id: 2,
      image: './images/banner-2.png',
-     name: 'test 1',
+     name: 'boubou africain,couple',
      title:
-       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quo impedit molestiae et totam.',
+       "le boubou est une chemise africaine composèe d'un grand rectangle de tissu avec une ouverte au centre pour le cou.",
    },
    {
      id: 3,
      image: './images/tenu3 1.png',
-     name: 'test 1',
+     name: 'boubou africain,couple',
      title:
-       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quo impedit molestiae et totam.',
+       "le boubou est une chemise africaine composèe d'un grand rectangle de tissu avec une ouverte au centre pour le cou.",
    },
    {
      id: 4,
      image: './images/slide-1 1.png',
-     name: 'test 1',
+     name: 'boubou africain,couple',
      title:
-       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quo impedit molestiae et totam.',
+       "le boubou est une chemise africaine composèe d'un grand rectangle de tissu avec une ouverte au centre pour le cou.",
    },
    {
      id: 5,
      image: './images/tenu5 1.png',
-     name: 'test 1',
+     name: 'boubou africain,couple',
      title:
-       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quo impedit molestiae et totam.',
+       "le boubou est une chemise africaine composèe d'un grand rectangle de tissu avec une ouverte au centre pour le cou.",
    },
    {
      id: 6,
      image: './images/blouse1 1.png',
-     name: 'test 1',
+     name: 'boubou africain,couple',
      title:
-       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quo impedit molestiae et totam.',
+       "le boubou est une chemise africaine composèe d'un grand rectangle de tissu avec une ouverte au centre pour le cou.",
    },
    {
      id: 7,
      image: './images/blouse2 1.png',
-     name: 'test 1',
+     name: 'boubou africain,couple',
      title:
-       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quo impedit molestiae et totam.',
+       "le boubou est une chemise africaine composèe d'un grand rectangle de tissu avec une ouverte au centre pour le cou.",
    },
    {
      id: 8,
      image: './images/blouse3 1.png',
-     name: 'test 1',
+     name: 'boubou africain,couple',
      title:
-       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quo impedit molestiae et totam.',
+       "le boubou est une chemise africaine composèe d'un grand rectangle de tissu avec une ouverte au centre pour le cou.",
    },
  ]);
  const [boutique, setBoutique] = useState([
@@ -108,7 +108,7 @@ const AppProvider =({children}) =>{
      images: [
        'https://dl.airtable.com/.attachmentThumbnails/b0993bd38d94fcaa7d0c573519330415/10a514ab',
        'https://dl.airtable.com/.attachmentThumbnails/7dd7df427531b4a7bbc37e64dc9f6809/6bd7aa77',
-       ,
+       
      ],
      description:
        'How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.',
@@ -124,7 +124,7 @@ const AppProvider =({children}) =>{
      images: [
        'https://dl.airtable.com/.attachmentThumbnails/d66dd36f5e8cfb694baf4b9933bbe6c5/ac44bd10',
        'https://dl.airtable.com/.attachmentThumbnails/b70d000816288e309f2c20e60d299a32/42e9201e',
-       ,
+       
      ],
      description:
        'How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.',
@@ -140,7 +140,7 @@ const AppProvider =({children}) =>{
      images: [
        'https://dl.airtable.com/.attachmentThumbnails/af3e0e742b2409bd34ba54e69d770da1/698ecb53',
        'https://dl.airtable.com/.attachmentThumbnails/a81f17b05efcacd38ca25e0454c768bf/068cb970',
-       ,
+       
      ],
      description:
        'How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.',
@@ -291,10 +291,48 @@ const AppProvider =({children}) =>{
      price: 201,
    },
  ]);
+ const [testimonial, setTestimonial] = useState([
+   {
+     id: 1,
+     image:
+       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
+     name: 'maria ferguson',
+     title: 'office manager',
+     quote:
+       'Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.',
+   },
+   {
+     id: 2,
+     image:
+       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
+     name: 'john doe',
+     title: 'regular guy',
+     quote:
+       'Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.',
+   },
+   {
+     id: 3,
+     image:
+       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959121/person-1_aufeoq.jpg',
+     name: 'peter smith',
+     title: 'product designer',
+     quote:
+       'Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.',
+   },
+   {
+     id: 4,
+     image:
+       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
+     name: 'susan andersen',
+     title: 'the boss',
+     quote:
+       'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ',
+   },
+ ]);
  return<AppContext.Provider value={{
   setShowNav,showNav,openNav,closeNav,slide,setSlide,
   indexSlide,setIndexSlide,boutique,setBoutique,
-  index,setIndex
+  index,setIndex,testimonial,setTestimonial
  }}>
 {children}
  </AppContext.Provider>

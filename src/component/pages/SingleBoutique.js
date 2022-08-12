@@ -1,5 +1,5 @@
 import React,{useRef} from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams,Link } from 'react-router-dom'
 import { useGlobalContext } from '../../context'
 export default function SingleBoutique() {
    const imgDiv = useRef(null)
@@ -21,50 +21,76 @@ imgDiv.current.style.backgroundPosition=
    
 
   return (
-    <div className=' section-center single-boutique'>
-    <div className="container-single">
-      {products.map((product) =>{
-        const { images, name, price, content } = product;
-        return (
-          <>
-          
-             <article className='single-details'>
-              <div
-                className='big-img' onMouseMove={handleMouse}
-                style={{ backgroundImage: `url(${images[index]})` }}
-                ref={imgDiv}
-                onMouseLeave={() =>
-                  (imgDiv.current.style.backgroundPosition = `center`)
-                }
-              ></div>
-              <div className='small-img'>
-                {product.images.map((img, index) => {
-                  return (
-                    <div className='img-small' key={index}>
-                      <img src={img} alt='' onClick={() => setIndex(index)} />
-                    </div>
-                  );
-                })}
-              </div>
-            </article>
-            <article className='single-info'>
-              <h3>{name}</h3>
-              <h4>{price}</h4>
-              <p>{content}</p>
-              {product.colors.map((color, index) => {
-                return (
-                  <button
-                    className='colors'
-                    key={index}
-                    style={{ background: color }}
-                  ></button>
-                );
-              })}
-            </article> 
-          </>
-        );
-      })}
-    </div>
-    </div>
-  )
+    <>
+      <div className='boutique-banner'>
+        <div className='boutique-banner-container'>
+          <article className='b-banner'>
+            <div className='b-banner-info'>
+              
+            </div>
+            <div className='b-banner-img'>
+              {/* <img src="/images/banner-boutique.jpg" alt="" /> */}
+            </div>
+          </article>
+        </div>
+      </div>
+      
+      <div className=' section-center single-boutique'>
+        <div className='container-single'>
+          {products.map((product) => {
+            const { images, name, price, content } = product;
+            return (
+              <>
+                <article className='single-details'>
+                  <div
+                    className='big-img'
+                    onMouseMove={handleMouse}
+                    style={{ backgroundImage: `url(${images[index]})` }}
+                    ref={imgDiv}
+                    onMouseLeave={() =>
+                      (imgDiv.current.style.backgroundPosition = `center`)
+                    }
+                  ></div>
+                  <div className='small-img'>
+                    {product.images.map((img, index) => {
+                      return (
+                        <div className='img-small' key={index}>
+                          <img
+                            src={img}
+                            alt=''
+                            onClick={() => setIndex(index)}
+                          />
+                        </div>
+                      );
+                    })}
+                  </div>
+                </article>
+                <article className='single-info'>
+                  <h3>{name}</h3>
+                  <h4>{price}</h4>
+                  <p>{content}</p>
+                  {product.colors.map((color, index) => {
+                    return (
+                      <button
+                        className='colors'
+                        key={index}
+                        style={{ background: color }}
+                      ></button>
+                    );
+                  })}
+                </article>
+              </>
+            );
+          })}
+        </div>
+      </div>
+      <div className="retour-b">
+        <Link to={`/boutique`}>
+        <button className="back-boutique">
+          retour a la boutique
+        </button>
+        </Link>
+      </div>
+    </>
+  );
 }

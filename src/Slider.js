@@ -35,11 +35,12 @@ export default function Slider() {
         }
         const { id, name,title, image } = slide;
         return (
-          <abbr className={slider} key={id}>
+          <address className={slider} key={id}>
             <img src={image} alt='' className='img-slide' />
             <div className='slide-info'>
               <h3>{name}</h3>
               <p>{title}</p>
+              
             </div>
            
             <div className='slide-details'>
@@ -51,7 +52,7 @@ export default function Slider() {
               <h3>la qualite c'est ici</h3>
               <button className='slide-buy'>acheter ici|</button>
             </div>
-          </abbr>
+          </address>
         );
       })}
 

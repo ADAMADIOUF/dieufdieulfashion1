@@ -7,6 +7,18 @@ export default function Boutique() {
   const{boutique}= useGlobalContext()
   return (
     <section className='section-center boutique'>
+      <div className="boutique-banner">
+        <div className="boutique-banner-container">
+          <article className="b-banner">
+            <div className="b-banner-info">
+              
+            </div>
+            <div className="b-banner-img">
+              {/* <img src="/images/banner-boutique.jpg" alt="" /> */}
+            </div>
+          </article>
+        </div>
+      </div>
 
       <div className="boutique-product-container">
 {

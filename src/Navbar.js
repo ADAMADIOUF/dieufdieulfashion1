@@ -7,7 +7,8 @@ export default function Navbar() {
     <nav className='navbar'>
       <div className='nav-center'>
         <div className='nav-header'>
-          <h3 className='logo'>dieuf dieul couture</h3>
+          <img src='/images/logo2.png' alt='' className='img-logo' />
+
           <button className='btn-toggle' onClick={openNav}>
             <FaBars />
           </button>
@@ -18,6 +19,9 @@ export default function Navbar() {
           </li>
           <li>
             <a href='/boutique'>boutique</a>
+          </li>
+          <li>
+            <a href='/tenu'>tenu de travail</a>
           </li>
           <li>
             <a href='/contact'>contact</a>
